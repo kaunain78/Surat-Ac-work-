@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surat AC Work - Contact Kaunain</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+    header { background-color: #007BFF; color: white; padding: 20px; text-align: center; }
+    section { padding: 20px; background-color: white; margin: 20px; border-radius: 8px; }
+    footer { background-color: #007BFF; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+    form input, form textarea {
+      width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;
+    }
+    form button {
+      background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 4px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Surat AC Work</h1>
+  <p>Expert AC Repair & Maintenance Services in Surat — by Kaunain</p>
+</header>
+
+<section>
+  <h2>About Us</h2>
+  <p>Hum Surat ke reliable AC repair aur maintenance experts hain. Fast service, skilled technicians aur affordable prices hamari pehchaan hai.</p>
+  <p><strong>Owner:</strong> Kaunain</p>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <ul>
+    <li>AC Installation</li>
+    <li>AC Repair & Maintenance</li>
+    <li>Gas Refilling</li>
+    <li>AC Servicing (Split/Window)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Contact Us</h2>
+  <p><strong>Phone:</strong> <a href="tel:+918601849336">8601849336</a></p>
+  <p><strong>Email:</strong> kaunainraza517@email.com</p>
+  <p><strong>Address:</strong> Udhna, Surat, Gujarat</p>
+  <p><em>Surat mein jis bhi vyakti ko AC ka kaam karwana ho, wo Kaunain se is number par contact kare.</em></p>
+
+  <h3>Send us a Message</h3>
+  <form id="whatsappForm" onsubmit="sendToWhatsApp(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="tel" id="phone" placeholder="Your Phone Number" required>
+    <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send via WhatsApp</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Surat AC Work | Created by Kaunain</p>
+</footer>
+
+<script>
+  function sendToWhatsApp() {
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var message = document.getElementById("message").value;
+    var fullMessage = `Name: ${name}%0APhone: ${phone}%0AMessage: ${message}`;
+    var whatsappNumber = "918601849336"; // without +
+    var url = `https://wa.me/${whatsappNumber}?text=${fullMessage}`;
+    window.open(url, '_blank');
+  }
+</script>
+
+</body>
+</html>
